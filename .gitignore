@@ -1,0 +1,3 @@
+dataset/
+knn_method/train_dir/*
+knn_method/captured/*
