@@ -25,7 +25,7 @@ while(True):
 
     for(x,y,w,h) in faces:
 
-        cv2.rectangle(img, (x,y), (x+w,y+h), (255,0,0), 2)     
+        cv2.rectangle(img, (x,y), (x+w,y+h), (255,0,0), 2) 
         # count += 1
         
         # save the captured image into the datasets folder

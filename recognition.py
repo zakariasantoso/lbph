@@ -30,13 +30,8 @@ for i in employee_data:
     names.append({'id': i[0], 'name': i[1].strip('\n')})
     print('ID: ' + i[0] + ' Nama: ' + i[1].strip('\n'))
 
-# print(names)
-
-# initialize and start realtime video capture
 cam = cv2.VideoCapture(0)
 print('Memulai Kamera...')
-# cam = cv2.VideoCapture('rtsp://admin:p3p3kl4h@4.4.5.254:554/cam/realmonitor?channel=1&subtype=0')
-# 'rtsp://admin:p3p3kl4h@4.4.5.254:554/cam/realmonitor?channel=1&subtype=0'
 cam.set(3, 640) # set video widht
 cam.set(4, 480) # set video height
 
@@ -47,7 +42,6 @@ minH = 0.1*cam.get(3)
 print('Memulai pendeteksian wajah...')
 while True:
     ret, img =cam.read()
-    # img = cv2.flip(img, -1) # Flip vertically
 
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
